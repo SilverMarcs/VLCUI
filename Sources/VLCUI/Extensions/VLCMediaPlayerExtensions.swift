@@ -24,12 +24,12 @@ extension VLCMediaPlayer {
             value = size
         }
 
-        #if !os(macOS)
+       // #if !os(macOS)
         perform(
             Selector(("setTextRendererFontSize:")),
             with: value
         )
-        #endif
+        // #endif
     }
 
     func setSubtitleFont(_ font: VLCVideoPlayer.ValueSelector<_PlatformFont>) {
